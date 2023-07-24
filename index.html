@@ -11,8 +11,14 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- manrope google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+   .font-garamond {
+    font-family: 'EB Garamond', serif;
+   }
+</style>
   <!-- tailwind custome color -->
   <script>
     tailwind.config = {
@@ -26,19 +32,152 @@
     }
   </script>
 </head>
-<body>
+<body class="font-garamond">
     <header class="container mx-auto">
         <!-- nav section -->
         <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <img src="./images/logo.png" alt="">
-                </div>
-                <div class="navbar-end">
-                  <a class="btn">Button</a>
-                </div>
-              </div>
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <h1 class="font-[#414040] text-3xl font-extrabold">Justice</h1>
+            </div>
+            <div class="navbar-center">
+              <ul class="flex gap-8">
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Cases</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Button</a>
+            </div>
+          </div>
         </nav>
+        <!-- banner section -->
+        <section>
+          <div class="hero min-h-screen" style="background-image: url(./images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-7xl font-extrabold">We Provide Effective <br> Legal Solutions</h1>
+                <p class="mb-5 text-sm font-medium text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+               <div class="gap-2">
+                <input class="px-28 py-3 rounded-lg text-[#A0A0A0]" type="search" name="" id="" placeholder="Search your service">
+                <button class="btn btn-primary px-10 bg-[#B68C5A] border-none">Search</button>
+               </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </header>
+
+    <!-- main section -->
+    <main>
+      <div class="text-center mt-20 mb-16">
+        <h1 class="text-[#414040] text-4xl font-extrabold">The Legal Practice Area</h1>
+        <p class="mt-5">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+      </div>
+
+      <!-- legak practice box -->
+
+      <!-- card-1 -->
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <div class="card  bg-base-100 rounded-none border-b">
+            <figure class="px-10 pt-10">
+              <img src="/images/business.png" alt="" class=""/>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#414040] text-4xl">Business Law</h2>
+              <p class="mt-5 text-[#707070] text-lg font-medium">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+              <div class="card-actions">
+                <div class="bg-[#B68C5A] px-3 py-2 rounded-full mt-5 mb-2"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- card-2 -->
+        <div>
+          <div class="card  bg-base-100 rounded-none border-b border-l border-br">
+            <figure class="px-10 pt-10">
+              <img src="/images/business.png" alt="" class=""/>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#414040] text-4xl">Business Law</h2>
+              <p class="mt-5 text-[#707070] text-lg font-medium">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+              <div class="card-actions">
+                <div class="bg-[#B68C5A] px-3 py-2 rounded-full mt-5 mb-2"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  <!-- card-3 -->
+        <div>
+          <div class="card  bg-base-100 rounded-none border-b border-l">
+            <figure class="px-10 pt-10">
+              <img src="/images/business.png" alt="" class=""/>
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#414040] text-4xl">Business Law</h2>
+              <p class="mt-5 text-[#707070] text-lg font-medium">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+              <div class="card-actions">
+                <div class="bg-[#B68C5A] px-3 py-2 rounded-full mt-5 mb-2"><i class="fa-solid fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+    
+<!-- card-4 -->
+    <div>
+      <div class="card  bg-base-100 rounded-none border-r">
+        <figure class="px-10 pt-10">
+          <img src="/images/business.png" alt="" class=""/>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-[#414040] text-4xl">Business Law</h2>
+          <p class="mt-5 text-[#707070] text-lg font-medium">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+          <div class="card-actions">
+            <div class="bg-[#B68C5A] px-3 py-2 rounded-full mt-5 mb-2"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- card-5 -->
+    <div>
+      <div class="card  bg-base-100 rounded-none border-r">
+        <figure class="px-10 pt-10">
+          <img src="/images/business.png" alt="" class=""/>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-[#414040] text-4xl">Business Law</h2>
+          <p class="mt-5 text-[#707070] text-lg font-medium">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+          <div class="card-actions">
+            <div class="bg-[#B68C5A] px-3 py-2 rounded-full mt-5 mb-2"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- card-6 -->
+    <div>
+      <div class="card  bg-base-100">
+        <figure class="px-10 pt-10">
+          <img src="/images/business.png" alt="" class=""/>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title text-[#414040] text-4xl">Business Law</h2>
+          <p class="mt-5 text-[#707070] text-lg font-medium p-4">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+          <div class="card-actions">
+            <div class="bg-[#B68C5A] px-3 py-2 rounded-full mt-5 mb-2"><i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+    </main>
 </body>
 </html>
